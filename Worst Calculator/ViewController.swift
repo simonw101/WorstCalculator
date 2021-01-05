@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+    var result = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +28,7 @@ class ViewController: UIViewController {
         
             if let secondNum = Int(secondNumber.text!) {
         
-                let result = firstNum + secondNum
+                result = firstNum + secondNum
                 
                 resultLabel.text = String(result)
                 
@@ -42,7 +44,7 @@ class ViewController: UIViewController {
         
             if let secondNum = Int(secondNumber.text!) {
         
-                let result = firstNum - secondNum
+                result = firstNum - secondNum
                 
                 resultLabel.text = String(result)
                 
@@ -58,7 +60,7 @@ class ViewController: UIViewController {
         
             if let secondNum = Int(secondNumber.text!) {
         
-                let result = firstNum * secondNum
+                result = firstNum * secondNum
                 
                 resultLabel.text = String(result)
                 
@@ -74,7 +76,7 @@ class ViewController: UIViewController {
         
             if let secondNum = Int(secondNumber.text!) {
         
-                let result = firstNum / secondNum
+                result = firstNum / secondNum
                 
                 resultLabel.text = String(result)
                 
